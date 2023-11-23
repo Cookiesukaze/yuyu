@@ -1,28 +1,44 @@
+<!--
+1.添加vue组件
+2.在其他组件中使用
+3.在index.js中声明
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 路由占位符 -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapGetters } from 'vuex';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: 'app',
+  components: {},
+  computed: {
+    computed: mapGetters(['allPosts']),
+  },
+  mounted() {
+    this.$store.dispatch("getPosts");
   }
+
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "~@/assets/font/font.css";
+body{
+  font-family: opposans,微软雅黑,monospace;
+}
+#app{
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+html,body{
+  height: 100%;
+
 }
 </style>

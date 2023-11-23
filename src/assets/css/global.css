@@ -1,0 +1,171 @@
+.horizontal{
+    display: flex;
+    flex-direction: row;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+}
+.right-section {
+    display: flex;
+    margin-left: auto;
+}
+.marginl1{
+    margin-left: 1vw;
+}
+.margint1{
+    margin-top: 1vw;
+}
+.marginl2{
+    margin-left: 2vw;
+}
+.margint2{
+    margin-top: 2vw;
+}
+.marginr2{
+    margin-right: 2vw;
+}
+.margint2-5{
+    margin-top: 2.5vw;
+}
+.margint3{
+    margin-top: 3vw;
+}
+.margint4{
+    margin-top: 4vw;
+}
+.marginl5{
+    margin-left: 5vw;
+}
+.margint5{
+    margin-top: 5vw;
+}
+.marginb20{
+    padding-bottom: 20vw;
+}
+.nickname {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.grey{
+    color: #AAAAAA;
+}
+.center{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.top-bar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.block-text {
+    margin: 0;
+    padding: 32px 16px 16px;
+    color: rgba(69, 90, 100, 0.6);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+.avatar {
+    width:40px;
+    height: 40px;
+    margin-right: 4vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.date-picker {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.date-item {
+    flex-shrink:0;
+    padding: 10px;
+    cursor: pointer;
+}
+.comment-picker {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.comment-item {
+    flex-shrink:0;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.comment-item-back{
+    margin:5px;
+    border-radius: 10px;
+    background: white;
+}
+.comment-item.active {
+    background-color: #f2f4ff;
+    color: #4467f1;
+    border-color: #4467f1;
+}
+.date-item.active {
+    background-color: #f2f4ff;
+    color: #4467f1;
+    border-color: #4467f1;
+}
+.date-item-back{
+    margin:5px;
+    border-radius: 10px;
+    background: white;
+}
+::-webkit-scrollbar {
+    width: 0 !important;
+}
+::-webkit-scrollbar {
+    width: 0 !important;height: 0;
+}
+.card0_withtext{
+    background:url("../img/card_background/card0_withtext.png") no-repeat;
+    background-size:cover;
+}
+.card1_background{
+    background:url("../img/card_background/card1_background.png") no-repeat;
+    background-size:cover;
+}
+.card2_background{
+    background:url("../img/card_background/card2_background.png") no-repeat;
+    background-size:cover;
+}
+.card2_withtext{
+    background:url("../img/card_background/card2_withtext.png") no-repeat;
+    background-size:cover;
+}
+.card3{
+    background:url("../img/card_background/card3.png") no-repeat;
+    background-size:cover;
+}
+.card_psycpass{
+    background:url("../img/card_background/card_psycpass.png") no-repeat;
+    background-size:cover;
+}
+.mood-card {
+//background: linear-gradient(to bottom, #ffffff, rgba(246, 246, 246, 0.64));
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added position relative */
+}
+.grey-background{
+    background: #f7f8fa;
+}
