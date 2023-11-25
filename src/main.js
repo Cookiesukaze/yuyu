@@ -47,7 +47,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.config.productionTip = false
 
 import axios from 'axios'
-axios.defaults.baseURL="http://cookiesukaze.cn/yuyu/"
+axios.defaults.baseURL="http://127.0.0.1:5000/"
 Vue.prototype.$http=axios
 
 new Vue({
